@@ -8,7 +8,7 @@ use axum::{response::Html, routing::get, Router};
 async fn main() {
     let hello_router = Router::new()
         .route("/hello", get(|| async { Html("<h1>Hello, World!</h1>") }))
-        .route("/", get(|| async { Html("<h1>Main page</h1>") }));
+        .route("/", get(|| async { Html("<h1>Main page</h1><p>Trial 1</p>") }));
 
     let addr = SocketAddr::from(([0, 0, 0, 0, 0, 0, 0, 0], 8080));
     println!("Listening on {addr}\n");
