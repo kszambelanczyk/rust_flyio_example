@@ -4,6 +4,8 @@ use std::net::SocketAddr;
 
 use axum::{response::Html, routing::get, Router};
 
+mod sample_mod;
+
 #[tokio::main]
 async fn main() {
     let hello_router = Router::new()
