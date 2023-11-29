@@ -13,4 +13,4 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Print second stage running
-        run: echo "Second stage running"
+        run: echo "Second stage running!!"
