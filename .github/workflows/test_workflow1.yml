@@ -1,0 +1,11 @@
+name: Test Workflow 1
+
+on: ["push"]
+
+jobs:
+  example-job:
+    name: Test job 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
